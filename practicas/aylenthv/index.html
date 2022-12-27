@@ -1,0 +1,32 @@
+<html>
+    <head>
+         <title>Mi primer codigo</title>
+         <style>
+            body {
+                background-color: cyan;
+            }
+            h1 {
+                color:brown;
+            }
+            p {
+                font-size: 25px;
+                color:darkblue;
+            }
+
+         </style>
+    </head>
+    <body>
+        <h1>Calcula tu peso en la Luna</h1>
+        <p>Conoce cual es tu peso en la Luna</p>
+        <script>
+            var usuario = prompt("¿Cual es tu peso en la Luna?");
+            var gTierra = 9.8;
+            var gLuna = 1.6;
+            var peso = parseInt(usuario);
+            var peso_final ;
+            var peso_luna =peso * gLuna / gTierra ;
+            var peso_final = parseInt(peso_luna);
+            document.write ("tu peso en la Luna es de " + peso_final + " kilogramos.");
+        </script>
+  </body>
+</html>
